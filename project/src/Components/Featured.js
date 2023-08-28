@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Featured = () => {
   return (
@@ -8,14 +9,21 @@ const Featured = () => {
         <hr class="w-48 h-1 mx-auto my-1 bg-black border-0 rounded md:my-5"></hr>
         <div className='md:flex md:flex-row justify-around md:py-5 sm:px-2'>
         
-        <div class="text-gray-900 py-3 md:py-1 ">
-            <div>
-                <img src="images/familyDeluxe.jpg" alt=" random imgee" class="sm:w-56 sm:h-48 md:w-72 md:h-56 object-cover object-center fd-cl hover:opacity-25 rounded-lg shadow-md"/>   
-            <div class="relative px-2 -mt-8  w-64">
+        <div class="text-gray-900 py-3 md:py-1 group hover:opacity-25 ">
+            <div
+                style={{
+                backgroundImage:
+                "url('images/familyDeluxe.jpg')"
+            }} class="sm:w-56 sm:h-48 md:w-72 md:h-56 fd-cl hover:opacity-25 rounded-lg shadow-md flex justify-center items-center">   
+                <Link to="/Features/FamilyDeluxe"><button class="rounded border-4 border-black px-7 pb-[8px] pt-[10px] text-md font-bold invisible group-hover:visible bg-transparent text-black">
+                     Features
+                </button></Link></div>
+
+            <div class=" px-2 -mt-8  w-64">
             <div class="bg-white p-3 rounded-lg shadow-lg">
                 <div class="flex items-baseline">
                     <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-                        $520
+                        $599
                     </span>
                     <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
                     2 baths  &bull; 3 rooms
@@ -28,13 +36,17 @@ const Featured = () => {
                 </div>  
             </div>
             </div>
-            
-            </div>
         </div>
-        <div class="text-gray-900 py-3 md:py-1">
-            <div>
-                <img src="images/DoubleDeluxe.jpg" alt=" random imgee" class="sm:w-56 sm:h-48 md:w-72 md:h-56 fd-cl hover:opacity-25 object-cover object-center rounded-lg shadow-md"/>    
-            <div class="relative px-2 -mt-8  w-64">
+        <div class="text-gray-900 py-3 md:py-1 group hover:opacity-25">
+            <div
+                style={{
+                backgroundImage:
+                "url('images/DoubleDeluxe.jpg')"
+            }} class="sm:w-56 sm:h-48 md:w-72 md:h-56 fd-cl hover:opacity-25 rounded-lg shadow-md flex justify-center items-center">   
+                <Link to="/Features/DoubleDeluxe"><button class="rounded border-4 border-black px-7 pb-[8px] pt-[10px] text-md font-bold invisible group-hover:visible bg-transparent text-black">
+                     Features
+                </button></Link></div>
+            <div class=" px-2 -mt-8  w-64">
             <div class="bg-white p-3 rounded-lg shadow-lg">
                 <div class="flex items-baseline">
                     <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
@@ -51,13 +63,17 @@ const Featured = () => {
                 </div>  
             </div>
             </div>
-            
-            </div>
         </div>
-        <div class="text-gray-900 py-3 md:py-1">
-            <div>
-                <img src="images/singleDeluxe.jpg" alt=" random imgee" class="sm:w-56 sm:h-48 md:w-72 md:h-56 fd-cl hover:opacity-25 object-cover object-center rounded-lg shadow-md"/>    
-            <div class="relative px-2 -mt-8  w-64">
+        <div class="text-gray-900 py-3 md:py-1 group hover:opacity-25">
+            <div
+                style={{
+                backgroundImage:
+                "url('images/singleDeluxe.jpg')"
+            }} class="sm:w-56 sm:h-48 md:w-72 md:h-56 fd-cl hover:opacity-25 rounded-lg shadow-md flex justify-center items-center">   
+                <Link to="/Features/SingleDeluxe"><button class="rounded border-4 border-black px-7 pb-[8px] pt-[10px] text-md font-bold invisible group-hover:visible bg-transparent text-black">
+                     Features
+                </button></Link></div>
+            <div class="px-2 -mt-8  w-64">
             <div class="bg-white p-3 rounded-lg shadow-lg">
                 <div class="flex items-baseline">
                     <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
@@ -78,7 +94,7 @@ const Featured = () => {
             </div>
         </div>
 
-        </div>
+        
     </div>
     </>
   )
