@@ -11,10 +11,10 @@ const Navbar = () =>{
 
     return(
     <> 
-      <nav className="bg-[#e5e7eb] bg-opacity-60 sticky top-0 scroll-smooth max-w-screen-2xl">  
+      <nav className="bg-[#e5e7eb] bg-opacity-60 sticky top-0 scroll-smooth max-w-screen-7xl">  
       <div className="app py-3 pl-3">
-        <div className="max-w-7xl">
-          <div className="flex mx-5 justify-between pr-10">
+        <div className="max-w-9xl pr-10">
+          <div className="flex mx-5 justify-between ">
             {/* Primary menu and logo */}
               {/* logo */}
               <div>

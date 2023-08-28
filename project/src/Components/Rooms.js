@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {LiaFilterSolid} from "react-icons/lia"
+import { useState } from 'react'
+import Filters from './Filters'
 
 const Rooms = () => {
+  const [isShown, setIsShown] = useState(false);
+
   return (
     <>
     <div>
@@ -26,8 +31,18 @@ const Rooms = () => {
               </div>
             </div> 
           </div>
+        
         <div className='text-center text-2xl font-bold pt-5 pb-1'><h1>Featured Rooms</h1></div>
+        <div className='flex gap-1' onClick={(e) => {setIsShown(current => !current)
+        return(
+          <Filters />
+        )}}>< LiaFilterSolid/>
+        <button>Filters</button></div>
+        <div></div>
+        
         <hr class="w-36 h-1 mx-auto my-1 bg-black border-0 rounded md:my-5"></hr>
+        
+      
     </div>
     </>
   )
